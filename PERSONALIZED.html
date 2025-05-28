@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Marketing Dashboard</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .personalized-section {
+            margin-bottom: 30px;
+        }
+        .personalized-section h2 {
+            color: #333;
+        }
+        .recommendations, .offers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .card p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, [User Name]!</h1>
+        <p>Your personalized marketing dashboard</p>
+    </header>
+    <div class="container">
+        <div class="personalized-section">
+            <h2>Recommended for You</h2>
+            <div class="recommendations">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Based on your browsing history.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Popular in your area.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Top-rated by customers like you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="personalized-section">
+            <h2>Special Offers</h2>
+            <div class="offers">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Offer 1">
+                    <h3>Offer 1</h3>
+                    <p>Get 20% off your next purchase.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Offer 2">
+                    <h3>Offer 2</h3>
+                    <p>Exclusive deal just for you.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Offer 3">
+                    <h3>Offer 3</h3>
+                    <p>Free shipping on orders over $50.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
